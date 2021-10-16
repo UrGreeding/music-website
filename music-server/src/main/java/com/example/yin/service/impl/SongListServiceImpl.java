@@ -16,12 +16,12 @@ public class SongListServiceImpl implements SongListService {
 
     @Override
     public boolean updateSongListMsg(SongList songList) {
-        return songListMapper.updateSongListMsg(songList) >0 ?true:false;
+        return songListMapper.updateSongListMsg(songList) >0;
     }
 
     @Override
     public boolean deleteSongList(Integer id) {
-        return songListMapper.deleteSongList(id) >0 ?true:false;
+        return songListMapper.deleteSongList(id) >0;
     }
 
     @Override
@@ -51,12 +51,12 @@ public class SongListServiceImpl implements SongListService {
     @Override
     public boolean addSongList(SongList songList)
     {
-        return songListMapper.insertSelective(songList) > 0?true:false;
+        return songListMapper.insertSelective(songList) > 0;
     }
 
     @Override
     public boolean updateSongListImg(SongList songList) {
 
-        return songListMapper.updateSongListImg(songList) >0 ?true:false;
+        return songListMapper.updateSongListImg(songList) >0;
     }
 }

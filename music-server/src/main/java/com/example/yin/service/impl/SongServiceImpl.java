@@ -24,29 +24,29 @@ public class SongServiceImpl implements SongService {
     public boolean addSong(Song song)
     {
 
-        return songMapper.insertSelective(song) > 0?true:false;
+        return songMapper.insertSelective(song) > 0;
     }
 
     @Override
     public boolean updateSongMsg(Song song) {
-        return songMapper.updateSongMsg(song) >0 ?true:false;
+        return songMapper.updateSongMsg(song) > 0;
     }
 
     @Override
     public boolean updateSongUrl(Song song) {
 
-        return songMapper.updateSongUrl(song) >0 ?true:false;
+        return songMapper.updateSongUrl(song) > 0;
     }
 
     @Override
     public boolean updateSongPic(Song song) {
 
-        return songMapper.updateSongPic(song) >0 ?true:false;
+        return songMapper.updateSongPic(song) >0;
     }
 
     @Override
     public boolean deleteSong(Integer id) {
-        return songMapper.deleteSong(id) >0 ?true:false;
+        return songMapper.deleteSong(id) > 0;
     }
 
     @Override

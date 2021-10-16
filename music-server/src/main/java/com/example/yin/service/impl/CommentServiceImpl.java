@@ -15,18 +15,18 @@ public class CommentServiceImpl implements CommentService{
 
     @Override
     public boolean addComment(Comment comment) {
-        return commentMapper.insertSelective(comment) > 0 ? true:false;
+        return commentMapper.insertSelective(comment) > 0;
     }
 
     @Override
     public boolean updateCommentMsg(Comment comment) {
-        return commentMapper.updateCommentMsg(comment) >0 ?true:false;
+        return commentMapper.updateCommentMsg(comment) > 0;
     }
 
 //    删除评论
     @Override
     public boolean deleteComment(Integer id) {
-        return commentMapper.deleteComment(id) >0 ?true:false;
+        return commentMapper.deleteComment(id) > 0;
     }
 
     @Override
